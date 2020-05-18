@@ -61,8 +61,9 @@ int main(int argc, char *argv[]) {
 
     /* Get maze width and height */
     
-    width = 0;
     height = 0;
+    width = fp.regex();
+    
     if(!width || !height){
         printf("error: illegal size /n");
         exit(EXIT_FAILURE);
